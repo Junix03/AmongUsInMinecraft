@@ -1,0 +1,7 @@
+name: AmongUs
+version: ${project.version}
+main: com.Junix03.AmongUs
+api-version: 1.16
+prefix: Among Us
+authors: [ Junix03 ]
+description: Among Us in Minecraft as Plugin
