@@ -1,6 +1,8 @@
-# Among Us in Minecraft
+### Among Us in Minecraft
 
 All you need are the Maps and the plugin which are delivered in this Repository
+
+At this moment its not possible to play this game
 
 ## How to set up your server
 
