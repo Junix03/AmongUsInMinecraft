@@ -1,7 +1,9 @@
 # Serverfiles
 .dat
 .mca
-,properties
+.properties
+logs/
+cache/
 
 # User-specific stuff
 .idea/
