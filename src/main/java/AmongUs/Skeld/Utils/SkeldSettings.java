@@ -1,4 +1,4 @@
-package AmongUs.Skeld;
+package AmongUs.Skeld.Utils;
 
 public class SkeldSettings {
 

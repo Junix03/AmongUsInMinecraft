@@ -1,6 +1,7 @@
-package AmongUs.Skeld;
+package AmongUs.Skeld.Utils;
 
 import AmongUs.AmongUs;
+import AmongUs.Skeld.SkeldGameManager;
 import com.destroystokyo.paper.event.server.ServerTickStartEvent;
 import org.bukkit.Location;
 import org.bukkit.Material;

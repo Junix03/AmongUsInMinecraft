@@ -1,7 +1,7 @@
 package AmongUs.Skeld.Commands;
 
 import AmongUs.Skeld.SkeldGameManager;
-import AmongUs.Skeld.SkeldSettings;
+import AmongUs.Skeld.Utils.SkeldSettings;
 import AmongUs.Utils.ColorUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

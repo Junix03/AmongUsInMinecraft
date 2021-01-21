@@ -3,6 +3,9 @@ package AmongUs.Skeld;
 import AmongUs.AmongUs;
 import AmongUs.Skeld.Commands.SkeldCommand;
 import AmongUs.Skeld.Locations.Cafeteria;
+import AmongUs.Skeld.Utils.SkeldImpostorManager;
+import AmongUs.Skeld.Utils.SkeldSettings;
+import AmongUs.Skeld.Utils.SkeldTaskManager;
 import AmongUs.Utils.ColorUtil;
 import com.destroystokyo.paper.Title;
 import com.destroystokyo.paper.event.server.ServerTickStartEvent;
@@ -73,9 +76,9 @@ public class SkeldGameManager implements Listener {
         if (playerList.contains(player))
             return;
 
-        if (!isOpen || playerList.size() == 10) {
+        if (!isOpen || playerList.size() == 10)
             player.sendMessage(PREFIX + "§6Sorry, but you cant enter this game. Please try again later!");
-        } else {
+        else {
             playerList.add(player);
             colorUtil.addPlayer(player);
 
