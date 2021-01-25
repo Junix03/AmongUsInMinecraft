@@ -37,8 +37,6 @@ public class UniversalListener implements org.bukkit.event.Listener {
             player.setFlying(false);
         } else
             player.setGameMode(GameMode.ADVENTURE);
-
-        SkeldGameManager.INSTANCE.addImpostor(player);
     }
 
     @EventHandler

@@ -38,7 +38,7 @@ public class SkeldGameManager implements Listener {
     private final static String PREFIX = "§2[Among Us | The Skeld]: §r";
     public static SkeldGameManager INSTANCE;
 
-    private ArrayList<Player> playerList = new ArrayList<>();
+    private final ArrayList<Player> playerList = new ArrayList<>();
     private final ColorUtil colorUtil = new ColorUtil();
     private boolean isOpen = true;
     private final SkeldSettings settings = new SkeldSettings();
@@ -48,7 +48,7 @@ public class SkeldGameManager implements Listener {
     private ArrayList<SkeldTaskManager> taskmanagerList = new ArrayList<>();
 
     private ArrayList<Player> ghostList = new ArrayList<>();
-    private SkeldImpostorManager impostorManager = new SkeldImpostorManager();
+    private SkeldImpostorManager impostorManager;
     private ArrayList<ArmorStand> corpsesList = new ArrayList<>();
     private BossBar taskProcessBar;
 
@@ -64,6 +64,7 @@ public class SkeldGameManager implements Listener {
     private void init() {
         INSTANCE = this;
         AmongUs.registerCommand("skeld", new SkeldCommand());
+        impostorManager = new SkeldImpostorManager();
     }
 
     public void startGame(Player player) {
@@ -263,10 +264,6 @@ public class SkeldGameManager implements Listener {
 
     public boolean isImpostor(Player player) {
         return impostorList.contains(player);
-    }
-
-    public void addImpostor(Player player) {
-        impostorList.add(player);
     }
 
     public ArrayList<Player> getImpostor() { return impostorList; }
